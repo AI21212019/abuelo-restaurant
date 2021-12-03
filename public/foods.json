@@ -4,7 +4,7 @@
     "title": "Eggs Benedict",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 8.99,
-    "image": "https://i.ibb.co/ccZyWng/breakfast1.png",
+    "image": "./assets/Breakfast/breakfast1.png",
     "type": "Breakfast"
   },
   {
@@ -12,7 +12,7 @@
     "title": "Breakfast Sandwich",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 9.99,
-    "image": "https://i.ibb.co/Bnz8Zv2/breakfast2.png",
+    "image": "./assets/Breakfast//breakfast2.png",
     "type": "Breakfast"
   },
   {
@@ -20,7 +20,7 @@
     "title": "Baked Chiken",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 10.99,
-    "image": "https://i.ibb.co/mXYbPcv/breakfast3.png",
+    "image": "./assets/Breakfast/breakfast3.png",
     "type": "Breakfast"
   },
   {
@@ -28,7 +28,7 @@
     "title": "Bagel and cream cheese",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 23.99,
-    "image": "https://i.ibb.co/87MwqqT/breakfast4.png",
+    "image": "./assets/Breakfast/breakfast4.png",
     "type": "Breakfast"
   },
   {
@@ -36,7 +36,7 @@
     "title": "Fried Egg Toast Brunch",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 3.99,
-    "image": "https://i.ibb.co/92mtcwx/breakfast5.png",
+    "image": "./assets/Breakfast/breakfast5.png",
     "type": "Breakfast"
   },
   {
@@ -44,7 +44,7 @@
     "title": "Toast Croissant Fried Egg",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 19.99,
-    "image": "https://i.ibb.co/hHGc7sm/breakfast6.png",
+    "image": "./assets/Breakfast/breakfast6.png",
     "type": "Breakfast"
   },
   {
@@ -52,7 +52,7 @@
     "title": "Beef Steak",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 15.99,
-    "image": "https://i.ibb.co/RgrfxCH/lunch1.png",
+    "image": "./assets/lunch/lunch1.png",
     "type": "Lunch"
   },
   {
@@ -60,7 +60,7 @@
     "title": "Honey with Peppers",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 7.99,
-    "image": "https://i.ibb.co/XsNF0PW/lunch2.png",
+    "image": "./assets/lunch/lunch2.png",
     "type": "Lunch"
   },
   {
@@ -68,7 +68,7 @@
     "title": "Tarrgaon Rubbed Salmon",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 7.99,
-    "image": "https://i.ibb.co/1MjBt1z/lunch3.png",
+    "image": "./assets/lunch/lunch3.png",
     "type": "Lunch"
   },
   {
@@ -76,7 +76,7 @@
     "title": "Indian Lunch",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 8.99,
-    "image": "https://i.ibb.co/G3Vq8Gt/lunch4.png",
+    "image": "./assets/lunch/lunch4.png",
     "type": "Lunch"
   },
   {
@@ -84,7 +84,7 @@
     "title": "Fried Chicken Bento",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 13.99,
-    "image": "https://i.ibb.co/gF3dTJs/lunch5.png",
+    "image": "./assets/lunch/lunch5.png",
     "type": "Lunch"
   },
   {
@@ -92,7 +92,7 @@
     "title": "healthy Meal Plan",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 83.99,
-    "image": "https://i.ibb.co/WGKYHcG/lunch6.png",
+    "image": "./assets/lunch/lunch6.png",
     "type": "Lunch"
   },
   {
@@ -100,7 +100,7 @@
     "title": "Baked Chicken",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 66.99,
-    "image": "https://i.ibb.co/XLbqWqJ/dinner1.png",
+    "image": "./assets/Dinner/dinner1.png",
     "type": "Dinner"
   },
   {
@@ -108,7 +108,7 @@
     "title": "Lemony Salmaon Piccata",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 56.99,
-    "image": "https://i.ibb.co/N3rVPJD/dinner2.png",
+    "image": "./assets/Dinner/dinner2.png",
     "type": "Dinner"
   },
   {
@@ -116,7 +116,7 @@
     "title": "Garlic Butter Baked Salmon",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 3.99,
-    "image": "  https://i.ibb.co/kyTLkW7/dinner3.png",
+    "image": "  ./assets/Dinner/dinner3.png",
     "type": "Dinner"
   },
   {
@@ -124,7 +124,7 @@
     "title": "French Fried with Cheese",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 23.99,
-    "image": "https://i.ibb.co/SNxL4z3/dinner4.png",
+    "image": "./assets/Dinner/dinner4.png",
     "type": "Dinner"
   },
   {
@@ -132,7 +132,7 @@
     "title": "Pork Tenderion",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 12.99,
-    "image": "https://i.ibb.co/VJ0c4cw/dinner5.png",
+    "image": "./assets/Dinner/dinner5.png",
     "type": "Dinner"
   },
   {
@@ -140,7 +140,7 @@
     "title": "Lentil Salad",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 9.99,
-    "image": "https://i.ibb.co/xjvNzKp/dinner6.png",
+    "image": "./assets/Dinner/dinner6.png",
     "type": "Dinner"
   }
 ]

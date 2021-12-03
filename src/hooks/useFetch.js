@@ -5,8 +5,8 @@ const useFetch = () => {
 
   useEffect(() => {
     fetch('./foods.json')
-      .then(res => res.json())
-      .then(data => setFoods(data));
+      .then(response => response.json())
+      .then(foods => setFoods(foods));
   }, []);
   return [foods, setFoods];
 };
