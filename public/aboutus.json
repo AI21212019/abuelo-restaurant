@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "image": "./assets/Image/fast-delivery.jpg",
+    "image": "./assets/Image/fast-delivery.png",
     "icon": "./assets/ICON/Group 204.png",
     "title": "Fast Delivery",
-    "description": "Keep your systems in sync with automated web hook bases notifications each tume link is paid and how we dream about our future."
+    "description": "We promptly deliver your order"
   },
   {
     "id": 2,
-    "image": "./assets/Image/auto-responder.jpg",
+    "image": "./assets/Image/auto-responder.png",
     "icon": "./assets/ICON/Group 1133.png",
     "title": "A Good Auto Responder",
-    "description": "Keep your systems in sync with automated web hook bases notifications each tume link is paid and how we dream about our future."
+    "description": "The quality is our priority and we will work to your expectations."
   },
   {
     "id": 3,
-    "image": "./assets/Image/home-delivery.jpg",
+    "image": "./assets/Image/home-delivery.png",
     "icon": "./assets/ICON/Group 245.png",
     "title": "Home Delivery",
-    "description": "Keep your systems in sync with automated web hook bases notifications each tume link is paid and how we dream about our future."
+    "description": "We understand the importance of your safety so we'll deliver to your most comfortable place!"
   }
 ]
