@@ -12,7 +12,7 @@ const Banner = () => {
           <input
             type="text"
             className=" rounded-full px-4 focus:outline-none w-full bg-transparent"
-            placeholder="Search here ......."
+            placeholder="Search here..."
           />
           <button className="text-sm bg-primary py-3 px-6 rounded-full text-white poppins ring-green-300 focus:ring-4 transition duration-300 hover:scale-105 transform">
             Search

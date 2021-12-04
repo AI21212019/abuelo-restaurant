@@ -12,8 +12,9 @@ body::-webkit-scrollbar {
 
 .header-banner {
   background-image: url('../assets/mexicanfood.jpg');
-  height: 600px !important;
+  height: 600px ;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
@@ -27,16 +28,16 @@ body::-webkit-scrollbar {
   font-family: 'Poppins', sans-serif;
 }
 .bg-primary {
-  background: #f91944;
+  background: #06e6bb;
 }
 .bg-primary-dark {
-  background: #ce193c;
+  background: #31e6c3;
 }
 .text-primary {
-  color: #f91944;
+  color: #06e6bb;
 }
 .border-primary {
-  border: 1px solid #f91944;
+  border: 1px solid #06e6bb;
 }
 
 /* Glassmorphism card effect */

@@ -9,7 +9,7 @@ const FoodItem = ({ image, title, description, price, type }) => {
   };
   return (
     <div className="bg-white border border-gray-100 transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
-      <span className="bg-red-100 border border-red-500 rounded-full text-primary text-sm poppins px-4 py-1 inline-block mb-4 ">
+      <span className="bg-green-100 border border-green-500 rounded-full text-primary text-sm poppins px-4 py-1 inline-block mb-4 ">
         {type}
       </span>
       <img
