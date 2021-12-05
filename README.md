@@ -1,9 +1,16 @@
 # 🫑 Green Peppers 🫑
 
+## Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Technologies](#technoligies)
+- [Acknowledgements](#acknowledgements)
+- [Contribution](#contribution)
+- [Optimizations](#optimizations)
+- [Roadmap](#roadmap)
+
+## Description
 An eCommerce restaurant ordering food application
-
-
-## HomeScreen
 
 ## Features
 
@@ -13,7 +20,7 @@ An eCommerce restaurant ordering food application
 - Cross platform
 
 
-## Tech Stack
+## Technoligies
 
 **Client:** React, Redux, TailwindCSS
 
@@ -23,6 +30,12 @@ An eCommerce restaurant ordering food application
 ## Acknowledgements
 
  - 
+
+### Contribution
+```
+  Contributions, issues, and feature requests are welcome!
+   Give a ⭐️ if you like this project!
+```
 
 ## Optimizations
 
