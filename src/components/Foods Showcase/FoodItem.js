@@ -8,12 +8,12 @@ const FoodItem = ({ image, title, description, price, type }) => {
     history.push(`/foods/${title}`);
   };
   return (
-    <div className="bg-white border border-gray-100 transition transform duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
+    <div className="bg-white border border-gray-100 transition  duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">
       <span className="bg-green-100 border border-green-500 rounded-full text-primary text-sm poppins px-4 py-1 inline-block mb-4 ">
         {type}
       </span>
       <img
-        className="w-64 mx-auto transform transition duration-300 hover:scale-105"
+        className="w-64 mx-auto  transition duration-300 hover:scale-105"
         src={image}
         alt=""
       />
@@ -24,7 +24,7 @@ const FoodItem = ({ image, title, description, price, type }) => {
         </p>
         <h2 className="text-gray-900 poppins text-2xl font-bold">${price}</h2>
         <button
-          className="bg-primary text-white px-8 py-2 focus:outline-none poppins rounded-full mt-24 transform transition duration-300 hover:scale-105"
+          className="bg-primary text-white px-8 py-2 focus:outline-none poppins rounded-full mt-24  transition duration-300 hover:scale-105"
           onClick={handleRoute}>
           Order Now
         </button>

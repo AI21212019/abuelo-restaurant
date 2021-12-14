@@ -1,6 +1,7 @@
 # 🫑 Green Peppers 🫑
 
 ## Table of Contents
+
 - [Description](#description)
 - [Features](#features)
 - [Technologies](#technoligies)
@@ -10,6 +11,7 @@
 - [Roadmap](#roadmap)
 
 ## Description
+
 An eCommerce restaurant ordering food application
 
 ## Features
@@ -19,19 +21,18 @@ An eCommerce restaurant ordering food application
 - Fullscreen mode
 - Cross platform
 
-
 ## Technoligies
 
-**Client:** React, Redux, TailwindCSS
+**Client:** React, TailwindCSS
 
-**Server:** Node, Express
-
+**Server:** firebase,
 
 ## Acknowledgements
 
- - 
+- S.M.Abtahi Noor
 
 ### Contribution
+
 ```
   Contributions, issues, and feature requests are welcome!
    Give a ⭐️ if you like this project!
@@ -39,8 +40,9 @@ An eCommerce restaurant ordering food application
 
 ## Optimizations
 
-What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
+The app is bing hosted at https://green-pepper-35f56.web.app
 
+What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
 
 ## Roadmap
 
