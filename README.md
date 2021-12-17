@@ -12,7 +12,7 @@
 
 ## Description
 
-An eCommerce restaurant ordering food application
+An eCommerce app for ordering hot/fresh delicious meals.
 
 ## Features
 
@@ -29,7 +29,7 @@ An eCommerce restaurant ordering food application
 
 ## Acknowledgements
 
-- S.M.Abtahi Noor
+- Inspired by S.M. Abtahi Noor
 
 ### Contribution
 
