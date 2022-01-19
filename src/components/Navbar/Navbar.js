@@ -55,11 +55,6 @@ const Navbar = () => {
                 </span>
                 <BsCart2 className="cursor-pointer w-6 h-6 text-gray-700" />
               </div>
-              <img
-                src={user.photoURL}
-                alt={user.displayName}
-                className="w-10 h-10 rounded-full"
-              />
               <p className="text-gray-700 poppins hidden md:block lg:block">
                 {user.displayName}
               </p>

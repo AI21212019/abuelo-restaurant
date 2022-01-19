@@ -4,8 +4,7 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.3",
-    "@tailwindcss/aspect-ratio": "^0.4.0",
-    "@tailwindcss/line-clamp": "^0.3.0",
+    
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -22,7 +21,6 @@
     "react-spinners": "^0.11.0",
     "sweetalert": "^2.1.2",
     "swiper": "6.7.0",
-    "tailwindcss": "^3.0.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -48,5 +46,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/line-clamp": "^0.3.0",
+    "tailwindcss": "^3.0.15"
   }
 }
