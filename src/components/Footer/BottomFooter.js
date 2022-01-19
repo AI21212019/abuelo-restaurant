@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const BottomFooter = () => {
+  const [date] = useState(new Date());
   return (
     <div className="flex items-center pt-8">
       <div className="flex flex-grow">
@@ -11,7 +12,7 @@ const BottomFooter = () => {
 
       <div className="flex justify-end items-center space-x-6">
         <span className="poppins text-white cursor-pointer">
-          Spectram @2021
+          Spectram @{date.getFullYear()}
         </span>
       </div>
     </div>
