@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './config/firebase';
 import Admin from './Admin/Admin';
 import Navbar from './components/Navbar/Navbar';
@@ -18,7 +18,7 @@ import SignUpScreen from './screens/SignUpScreen';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <AuthProvider>
         <OrderProvider>
           <DeliveryProvider>
@@ -52,7 +52,7 @@ const App = () => {
           </DeliveryProvider>
         </OrderProvider>
       </AuthProvider>
-    </BrowserRouter>
+    </Router>
   );
 };
 
