@@ -11,13 +11,3 @@
   }
 }
 
-
-@layer utilities {
-  .outline-white {
-    outline: 2px dotted white;
-    outline-offset: 2px;
-  }
-  .content-auto {
-     content-visibility: auto;
-   }
-}
