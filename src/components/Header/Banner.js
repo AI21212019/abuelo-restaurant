@@ -8,7 +8,7 @@ const Banner = () => {
           The best food waiting for your belly!
         </h1>
 
-        <div className="rounded-full p-1 box-border mt-8 bg-white overflow-hidden ring-red-300 focus:ring-4 w-96 flex items-center">
+        <div className="rounded-full p-1 box-border mt-8 bg-white overflow-hidden ring-green-300 focus:ring-4 w-96 flex items-center">
           <input
             type="text"
             className=" rounded-full px-4 focus:outline-none w-full bg-transparent"

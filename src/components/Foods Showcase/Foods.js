@@ -24,11 +24,11 @@ const Foods = () => {
   return (
     <section className="my-12 max-w-screen-xl mx-auto px-6">
       {/* food Menu tab  */}
-      <div className="flex items-center justify-center space-x-6">
+      <div className="flex items-center justify-center space-x-6 cursor-pointer">
         <p
           className={
             menuTab === 'Breakfast'
-              ? 'active_menu_tab poppins bg-primary'
+              ? 'active_menu_tab poppins bg-primary border border-green-500 rounded-full'
               : 'menu_tab poppins'
           }
           onClick={() => handleMenuTabs('Breakfast')}>
@@ -37,7 +37,7 @@ const Foods = () => {
         <p
           className={
             menuTab === 'Lunch'
-              ? 'active_menu_tab poppins bg-primary'
+              ? 'active_menu_tab poppins bg-primary border border-green-500 rounded-full'
               : 'menu_tab poppins'
           }
           onClick={() => handleMenuTabs('Lunch')}>
@@ -46,7 +46,7 @@ const Foods = () => {
         <p
           className={
             menuTab === 'Dinner'
-              ? 'active_menu_tab poppins bg-primary'
+              ? 'active_menu_tab poppins bg-primary border border-green-500 rounded-full'
               : 'menu_tab poppins'
           }
           onClick={() => handleMenuTabs('Dinner')}>

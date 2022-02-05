@@ -68,12 +68,12 @@ const Navbar = () => {
           <>
             <div className="flex items-center justify-end space-x-6">
               <button
-                className="poppins"
+                className="bg-primary px-6 py-3 text-white poppins rounded-full ring-green-300 focus:outline-none focus:ring-4  transition duration-700 hover:scale-105 "
                 onClick={() => history.push('/signin')}>
                 Sign In
               </button>
               <button
-                className=" bg-primary px-6 py-3 text-white poppins rounded-full ring-red-300 focus:outline-none focus:ring-4  transition duration-700 hover:scale-105"
+                className=" bg-primary px-6 py-3 text-white poppins rounded-full ring-green-300 focus:outline-none focus:ring-4  transition duration-700 hover:scale-105"
                 onClick={() => history.push('/signup')}>
                 Sign Up
               </button>
