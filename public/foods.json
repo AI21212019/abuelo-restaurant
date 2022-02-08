@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Breakfast tacos",
-    "description": "a brunch staple consisting of poached eggs and Canadian bacon or sliced ham on an English muffin, topped with hollandaise sauce (a rich and creamy concoction made with egg yolks, butter, lemon juice or vinegar, and various seasonings).",
+    "description": "Our delicious breakfast tacos are the perfect way to start your day! We offer a variety of different fillings, including bacon, eggs, and cheese. So why not come in and try one today?",
     "price": 8.99,
     "image": "./assets/Breakfast/breakfast1.jpg",
     "type": "Breakfast"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "title": "Chilaquiles",
-    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "description": "Looking for a delicious, and spicy Mexican dish? Look no further than our chilaquiles! Our chilaquiles are made with fresh, fried corn tortillas, and simmered in a delicious chile sauce. So if you're looking for a spicy, and hearty meal, our chilaquiles are perfect for you!",
     "price": 9.99,
     "image": "./assets/Breakfast//breakfast2.jpg",
     "type": "Breakfast"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "title": "Camarones",
-    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "description": "This shrimp cocktail is the perfect appetizer for any meal! The shrimp are cooked to perfection and served in a delicious sauce.",
     "price": 10.99,
     "image": "./assets/Breakfast/breakfast3.jpg",
     "type": "Breakfast"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "title": "Chicharrones",
-    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "description": "Chicharrones are a popular Mexican dish made of fried pork rinds. They are a great appetizer or snack, and are perfect for those who are looking for a tasty and filling food.",
     "price": 3.99,
     "image": "./assets/Breakfast/breakfast4.jpg",
     "type": "Breakfast"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "title": "Pozole",
-    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "description": "Pozole is a traditional Mexican soup made with pork and hominy. It is a hearty and filling soup that is perfect for a winter meal.",
     "price": 3.99,
     "image": "./assets/Breakfast/breakfast5.jpg",
     "type": "Breakfast"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "title": "Tamales",
-    "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
+    "description": "Tamales are a traditional Mexican dish made of corn dough (masa) and meat, usually pork, chicken, beef, or turkey. They are wrapped in a corn husk or banana leaf and steamed. At our restaurant, we make our tamales fresh every day. Our pork tamales are made with pork, green chilies, and cheese. Our chicken tamales are made with chicken, red enchilada sauce, and cheese.",
     "price": 9.99,
     "image": "./assets/Breakfast/tamales.jpeg",
     "type": "Breakfast"
