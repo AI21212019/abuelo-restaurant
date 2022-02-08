@@ -1,50 +1,50 @@
 [
   {
     "id": 1,
-    "title": "Eggs Benedict",
+    "title": "Breakfast tacos",
     "description": "a brunch staple consisting of poached eggs and Canadian bacon or sliced ham on an English muffin, topped with hollandaise sauce (a rich and creamy concoction made with egg yolks, butter, lemon juice or vinegar, and various seasonings).",
     "price": 8.99,
-    "image": "./assets/Breakfast/breakfast1.png",
+    "image": "./assets/Breakfast/breakfast1.jpg",
     "type": "Breakfast"
   },
   {
     "id": 2,
-    "title": "Breakfast Sandwich",
+    "title": "Chilaquiles",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 9.99,
-    "image": "./assets/Breakfast//breakfast2.png",
+    "image": "./assets/Breakfast//breakfast2.jpg",
     "type": "Breakfast"
   },
   {
     "id": 3,
-    "title": "Baked Chiken",
+    "title": "Camarones",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 10.99,
-    "image": "./assets/Breakfast/breakfast3.png",
+    "image": "./assets/Breakfast/breakfast3.jpg",
     "type": "Breakfast"
   },
   {
     "id": 4,
-    "title": "Bagel and cream cheese",
+    "title": "Chicharrones",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 3.99,
-    "image": "./assets/Breakfast/breakfast4.png",
+    "image": "./assets/Breakfast/breakfast4.jpg",
     "type": "Breakfast"
   },
   {
     "id": 5,
-    "title": "Fried Egg Toast Brunch",
+    "title": "Pozole",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 3.99,
-    "image": "./assets/Breakfast/breakfast5.png",
+    "image": "./assets/Breakfast/breakfast5.jpg",
     "type": "Breakfast"
   },
   {
     "id": 6,
-    "title": "Toast Croissant Fried Egg",
+    "title": "Tamales",
     "description": "Gay one the what walk then she. Demesne mention promise you justice arrived way.Amazing foods are or and increasing to in especially inquietude companions acceptance admiration.Outweigh it families distance wandered ye..",
     "price": 9.99,
-    "image": "./assets/Breakfast/breakfast6.png",
+    "image": "./assets/Breakfast/tamales.jpeg",
     "type": "Breakfast"
   },
   {
