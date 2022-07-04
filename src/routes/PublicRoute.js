@@ -3,20 +3,16 @@ import { Redirect, Route } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 
 const PublicRoute = ({ children, ...rest }) => {
-    const { user } = useAuth();
+  const { user } = useAuth();
 
-    return (
-        <Route
-            {...rest}
-            render={({ location }) =>
-                !user.displayName ? (
-                    children
-                ) : (
-                    <Redirect to="/" />
-                )
-            }
-        />
-    )
-}
+  return (
+    <Route
+      {...rest}
+      children={({ location }) =>
+        !user.displayName ? children : <Redirect to="/" />
+      }
+    />
+  );
+};
 
-export default PublicRoute
+export default PublicRoute;

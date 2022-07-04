@@ -1,5 +1,8 @@
 import React from 'react';
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { CompatRouter } from 'react-router-dom-v5-compat';
+
 import './config/firebase';
 import Admin from './Admin/Admin';
 import Navbar from './components/Navbar/Navbar';
@@ -18,41 +21,43 @@ import SignUpScreen from './screens/SignUpScreen';
 
 const App = () => {
   return (
-    <Router>
-      <AuthProvider>
-        <OrderProvider>
-          <DeliveryProvider>
-            <Navbar />
-            <Switch>
-              <Route exact path="/">
-                <HomeScreen />
-              </Route>
-              <PublicRoute exact path="/signin">
-                <SignInScreen />
-              </PublicRoute>
-              <PublicRoute exact path="/signup">
-                <SignUpScreen />
-              </PublicRoute>
-              <PrivateRoute exact path="/foods/:title">
-                <FoodDetailScreen />
-              </PrivateRoute>
-              <PrivateRoute exact path="/orders">
-                <PlaceOrderScreen />
-              </PrivateRoute>
-              <PrivateRoute exact path="/order-successful">
-                <OrderSuccessfulScreen />
-              </PrivateRoute>
-              <PrivateRoute exact path="/admin">
-                <Admin />
-              </PrivateRoute>
-              <Route path="*">
-                <ErrorScreen />
-              </Route>
-            </Switch>
-          </DeliveryProvider>
-        </OrderProvider>
-      </AuthProvider>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <CompatRouter>
+          <OrderProvider>
+            <DeliveryProvider>
+              <Navbar />
+              <Switch>
+                <Route exact path="/">
+                  <HomeScreen />
+                </Route>
+                <PublicRoute path="/signin">
+                  <SignInScreen />
+                </PublicRoute>
+                <PublicRoute path="/signup">
+                  <SignUpScreen />
+                </PublicRoute>
+                <PrivateRoute path="/foods/:title">
+                  <FoodDetailScreen />
+                </PrivateRoute>
+                <PrivateRoute path="/orders">
+                  <PlaceOrderScreen />
+                </PrivateRoute>
+                <PrivateRoute path="/order-successful">
+                  <OrderSuccessfulScreen />
+                </PrivateRoute>
+                <PrivateRoute path="/admin">
+                  <Admin />
+                </PrivateRoute>
+                <Route path="*">
+                  <ErrorScreen />
+                </Route>
+              </Switch>
+            </DeliveryProvider>
+          </OrderProvider>
+        </CompatRouter>
+      </Router>
+    </AuthProvider>
   );
 };
 
