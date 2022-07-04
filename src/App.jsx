@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { CompatRouter } from 'react-router-dom-v5-compat';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import { CompatRouter, CompatRoute } from 'react-router-dom-v5-compat';
 
 import './config/firebase';
 import Admin from './Admin/Admin';
@@ -28,9 +28,8 @@ const App = () => {
             <DeliveryProvider>
               <Navbar />
               <Switch>
-                <Route exact path="/">
-                  <HomeScreen />
-                </Route>
+                <CompatRoute exact path="/" component={HomeScreen} />
+
                 <PublicRoute path="/signin">
                   <SignInScreen />
                 </PublicRoute>
@@ -49,9 +48,7 @@ const App = () => {
                 <PrivateRoute path="/admin">
                   <Admin />
                 </PrivateRoute>
-                <Route path="*">
-                  <ErrorScreen />
-                </Route>
+                <CompatRoute path="*" component={ErrorScreen} />
               </Switch>
             </DeliveryProvider>
           </OrderProvider>

@@ -4,13 +4,14 @@ import { FiLogOut } from 'react-icons/fi';
 import { NavLink, useHistory } from 'react-router-dom';
 import logo from '../../assets/logo2.png';
 import { useOrder } from '../../contexts/OrderProvider';
-import useAuth from '../../hooks/useAuth';
+// import useAuth from '../../hooks/useAuth';
 
 const Navbar = () => {
   const [changeHeader, setChangeHeader] = useState(false);
   const history = useHistory();
-  const { user, signOutUser } = useAuth();
-  const { order } = useOrder();
+  // const { user } = useAuth();
+  const [user, setUser] = useState(null);
+  const order = useOrder();
 
   //header change function
   const onChangeHeader = () => {
@@ -41,7 +42,7 @@ const Navbar = () => {
           />
         </div>
         {/* right  */}
-        {user.displayName ? (
+        {user ? (
           <>
             <div className="flex items-center justify-end space-x-4">
               <NavLink to="/admin" className="text-gray-600">
