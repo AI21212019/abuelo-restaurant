@@ -6,7 +6,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
-  updateProfile,
+  updateProfile
 } from 'firebase/auth';
 import { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
@@ -33,7 +33,7 @@ const useFirebase = () => {
         setUser(res.user);
         updateProfile(auth.currentUser, {
           displayName: name,
-          photoURL: image,
+          photoURL: image
         }).then(() => {
           swal('Good job!', 'Account has been created!', 'success');
           history.push('/');
@@ -83,7 +83,7 @@ const useFirebase = () => {
     signUpUser,
     signInUser,
     signOutUser,
-    signInWithGoogle,
+    signInWithGoogle
   };
 };
 

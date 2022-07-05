@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
 import { MdVerified } from 'react-icons/md';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom-v5-compat';
 import GridLoader from 'react-spinners/GridLoader';
 import orderSuccessful from '../assets/ordersuccess.png';
 
@@ -13,7 +13,7 @@ const override = css`
 
 const OrderSuccessfulScreen = () => {
   const [loading, setLoading] = useState(true);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   //loading
   useEffect(() => {

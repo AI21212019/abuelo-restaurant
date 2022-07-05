@@ -1,9 +1,9 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom-v5-compat';
 import errorImg from '../assets/error.png';
 
 const ErrorScreen = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   return (
     <main className=" h-screen banner">
@@ -13,7 +13,7 @@ const ErrorScreen = () => {
 
           <button
             className="bg-primary text-white px-8 py-2 focus:outline-none poppins rounded-full mt-24  transition duration-300 hover:scale-105"
-            onClick={() => history.push('/')}>
+            onClick={() => navigate('/')}>
             Go back to home
           </button>
         </div>

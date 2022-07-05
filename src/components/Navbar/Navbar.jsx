@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { BsCart2 } from 'react-icons/bs';
 import { FiLogOut } from 'react-icons/fi';
-import { NavLink, useHistory } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom-v5-compat';
 import logo from '../../assets/logo2.png';
 import { useOrder } from '../../contexts/OrderProvider';
-import useAuth from '../../hooks/useAuth';
+// import useAuth from '../../hooks/useAuth';
 
 const Navbar = () => {
   const [changeHeader, setChangeHeader] = useState(false);
-  const history = useHistory();
-  const { user, signOutUser } = useAuth();
-  const { order } = useOrder();
+  const navigate = useNavigate();
+  // const { user } = useAuth();
+  const [user, setUser] = useState(null);
+  const order = useOrder();
 
   //header change function
   const onChangeHeader = () => {
@@ -37,19 +38,18 @@ const Navbar = () => {
             className="w-36 cursor-pointer"
             src={logo}
             alt="logo"
-            onClick={() => history.push('/')}
+            onClick={() => navigate('/')}
           />
         </div>
         {/* right  */}
-        {user.displayName ? (
+        {user ? (
           <>
             <div className="flex items-center justify-end space-x-4">
-              <NavLink to="/admin" className="text-gray-600">
-                Admin
-              </NavLink>
+              <NavLink end to="/admin" className="text-gray-600" />
+
               <div
                 className="relative flex cursor-pointer"
-                onClick={() => history.push('/orders')}>
+                onClick={() => navigate('/orders')}>
                 <span className="bg-primary w-6 h-6 rounded-full flex items-center justify-center text-white poppins absolute -right-2 -top-2">
                   {order.length}
                 </span>
@@ -69,12 +69,12 @@ const Navbar = () => {
             <div className="flex items-center justify-end space-x-6">
               <button
                 className="bg-primary px-6 py-3 text-white poppins rounded-full ring-green-300 focus:outline-none focus:ring-4  transition duration-700 hover:scale-105 "
-                onClick={() => history.push('/signin')}>
+                onClick={() => navigate('/signin')}>
                 Sign In
               </button>
               <button
                 className=" bg-primary px-6 py-3 text-white poppins rounded-full ring-green-300 focus:outline-none focus:ring-4  transition duration-700 hover:scale-105"
-                onClick={() => history.push('/signup')}>
+                onClick={() => navigate('/signup')}>
                 Sign Up
               </button>
             </div>

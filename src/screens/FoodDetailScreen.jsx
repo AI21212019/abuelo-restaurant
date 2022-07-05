@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { BsCart2 } from 'react-icons/bs';
-import { useHistory, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom-v5-compat';
 import swal from 'sweetalert';
 import { useOrder } from '../contexts/OrderProvider';
 import useFetch from '../hooks/useFetch';
@@ -11,10 +11,10 @@ const FoodDetailScreen = () => {
   const [quantity, setQuantity] = useState(1);
   // const [orderPrice, setOrderPrice] = useState()
   const [disabled, setDisabled] = useState(false);
-  const { title } = useParams();
+  const title = useParams();
   const [foods] = useFetch();
   const { handleOrder } = useOrder();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   return (
     <main className="max-w-screen-xl mx-auto px-6 my-16">
@@ -82,8 +82,8 @@ const FoodDetailScreen = () => {
                         'Your order has added to the cart',
                         'success'
                       );
-                      history.push('/orders');
-                      console.log(food);
+                      navigate('/orders');
+                      // console.log(food);
                     }}>
                     <BsCart2 className="text-xl" />
                     <span>{disabled ? 'Added' : 'Add to Cart'}</span>
