@@ -1,11 +1,12 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom-v5-compat';
 
 const FoodItem = ({ image, title, description, price, type }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleRoute = () => {
-    history.push(`/foods/${title}`);
+    navigate(`/foods/${title}`);
   };
   return (
     <div className="bg-white border border-gray-100 transition  duration-700 hover:shadow-xl hover:scale-105 p-4 rounded-lg relative">

@@ -7,5 +7,10 @@ export default defineConfig({
     react({
       jsxRuntime: 'classic'
     })
-  ]
+  ],
+  esbuild: {
+    define: {
+      this: 'window'
+    }
+  }
 });
