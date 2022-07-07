@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
-import { CompatRouter, CompatRoute } from 'react-router-dom-v5-compat';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { CompatRouter, Routes } from 'react-router-dom-v5-compat';
 import AuthProvider from '../contexts/AuthProvider';
 import PrivateRoute from '../routes/PrivateRoute';
 import AddProductScreen from './AddProductScreen';
@@ -18,7 +18,7 @@ const Admin = () => {
               <SideNav />
             </div>
             <div className="col-span-4 my-24 px-6">
-              <Switch>
+              <Routes>
                 <PrivateRoute exact path="/admin/manage-products">
                   <ManageProductScreen />
                 </PrivateRoute>
@@ -28,7 +28,7 @@ const Admin = () => {
                 <PrivateRoute exact path="/admin/edit/:id">
                   <EditProductScreen />
                 </PrivateRoute>
-              </Switch>
+              </Routes>
             </div>
           </main>
         </AuthProvider>

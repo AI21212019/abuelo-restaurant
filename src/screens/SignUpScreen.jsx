@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom-v5-compat';
 import Brand from '../components/Form/Brand';
 import Button from '../components/Form/Button';
 import GoogleSignIn from '../components/Form/GoogleSignIn';
@@ -77,11 +77,10 @@ const SignUpScreen = () => {
             ))}
           </div>
           <Button text="Sign Up" />
-          <Link to="/signin">
-            <p className="text-base text-primary text-center my-6 hover:underline">
-              Already have an account ?
-            </p>
-          </Link>
+          <Link to="signin" />
+          <p className="text-base text-primary text-center my-6 hover:underline">
+            Already have an account ?
+          </p>
 
           <GoogleSignIn text="Sign Up With Google" />
         </form>
