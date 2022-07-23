@@ -11,11 +11,13 @@ import {
 import { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import swal from 'sweetalert';
+// import { useNavigate } from 'react-router-dom-v5-compat';
 
-const useFirebase = () => {
+const useFirebase = props => {
   const [user, setUser] = useState({});
   const auth = getAuth();
   const history = useHistory();
+  // const navigate = useNavigate();
 
   //on State Change
   useEffect(() => {

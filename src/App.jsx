@@ -9,7 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 import AuthProvider from './contexts/AuthProvider';
 import DeliveryProvider from './contexts/DeliveryProvider';
 import OrderProvider from './contexts/OrderProvider';
-import PrivateRoute from './routes/PrivateRoute';
+import RequireAuth from './routes/PrivateRoute';
 import PublicRoute from './routes/PublicRoute';
 import ErrorScreen from './screens/ErrorScreen';
 import FoodDetailScreen from './screens/FoodDetailScreen';
@@ -30,24 +30,24 @@ const App = () => {
               <Switch>
                 <CompatRoute exact path="/" component={HomeScreen} />
 
-                <PublicRoute path="/signin">
+                <CompatRoute path="/signin">
                   <SignInScreen />
-                </PublicRoute>
-                <PublicRoute path="/signup">
+                </CompatRoute>
+                <CompatRoute path="/signup">
                   <SignUpScreen />
-                </PublicRoute>
-                <PrivateRoute path="/foods/:title">
+                </CompatRoute>
+                <CompatRoute path="/foods/:title">
                   <FoodDetailScreen />
-                </PrivateRoute>
-                <PrivateRoute path="/orders">
+                </CompatRoute>
+                <CompatRoute path="/orders">
                   <PlaceOrderScreen />
-                </PrivateRoute>
-                <PrivateRoute path="/order-successful">
+                </CompatRoute>
+                <CompatRoute path="/order-successful">
                   <OrderSuccessfulScreen />
-                </PrivateRoute>
-                <PrivateRoute path="/admin">
+                </CompatRoute>
+                <CompatRoute path="/admin">
                   <Admin />
-                </PrivateRoute>
+                </CompatRoute>
                 <CompatRoute path="*" component={ErrorScreen} />
               </Switch>
             </DeliveryProvider>

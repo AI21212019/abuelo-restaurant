@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { CompatRouter, Routes } from 'react-router-dom-v5-compat';
 import AuthProvider from '../contexts/AuthProvider';
-import PrivateRoute from '../routes/PrivateRoute';
+import RequireAuth from '../routes/PrivateRoute';
 import AddProductScreen from './AddProductScreen';
 import EditProductScreen from './EditProductScreen';
 import ManageProductScreen from './ManageProductScreen';
@@ -19,15 +19,15 @@ const Admin = () => {
             </div>
             <div className="col-span-4 my-24 px-6">
               <Routes>
-                <PrivateRoute exact path="/admin/manage-products">
+                <CompatRoute exact path="/admin/manage-products">
                   <ManageProductScreen />
-                </PrivateRoute>
-                <PrivateRoute exact path="/admin/add">
+                </CompatRoute>
+                <CompatRoute exact path="/admin/add">
                   <AddProductScreen />
-                </PrivateRoute>
-                <PrivateRoute exact path="/admin/edit/:id">
+                </CompatRoute>
+                <CompatRoute exact path="/admin/edit/:id">
                   <EditProductScreen />
-                </PrivateRoute>
+                </CompatRoute>
               </Routes>
             </div>
           </main>
