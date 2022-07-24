@@ -1,6 +1,6 @@
 import React from 'react';
 // import { useHistory } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom-v5-compat';
+import { useNavigate } from 'react-router-dom';
 
 const FoodItem = ({ image, title, description, price, type }) => {
   const navigate = useNavigate();

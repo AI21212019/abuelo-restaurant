@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
 import { MdVerified } from 'react-icons/md';
-import { useNavigate } from 'react-router-dom-v5-compat';
+import { useNavigate } from 'react-router-dom';
 import GridLoader from 'react-spinners/GridLoader';
 import orderSuccessful from '../assets/ordersuccess.png';
 
@@ -50,7 +50,7 @@ const OrderSuccessfulScreen = () => {
 
               <button
                 className="bg-primary text-white px-8 py-2 focus:outline-none poppins rounded-full mt-24  transition duration-300 hover:scale-105"
-                onClick={() => history.push('/')}>
+                onClick={() => navigate.push('/')}>
                 Go back to home
               </button>
             </div>

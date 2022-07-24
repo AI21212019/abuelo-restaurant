@@ -1,15 +1,15 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
-import { CompatRouter, CompatRoute } from 'react-router-dom-v5-compat';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import { CompatRouter, Route, Routes } from 'react-router-dom-v5-compat';
 
 import './config/firebase';
 import Admin from './Admin/Admin';
 import Navbar from './components/Navbar/Navbar';
-import AuthProvider from './contexts/AuthProvider';
+import AutoProvider from './contexts/AuthProvider';
 import DeliveryProvider from './contexts/DeliveryProvider';
 import OrderProvider from './contexts/OrderProvider';
-import PrivateRoute from './routes/PrivateRoute';
+import RequireAuth from './routes/PrivateRoute';
 import PublicRoute from './routes/PublicRoute';
 import ErrorScreen from './screens/ErrorScreen';
 import FoodDetailScreen from './screens/FoodDetailScreen';
@@ -23,36 +23,31 @@ const App = () => {
   return (
     <AuthProvider>
       <Router>
-        <CompatRouter>
-          <OrderProvider>
-            <DeliveryProvider>
-              <Navbar />
-              <Switch>
-                <CompatRoute exact path="/" component={HomeScreen} />
+        <OrderProvider>
+          <DeliveryProvider>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<HomeScreen />} />
 
-                <PublicRoute path="/signin">
-                  <SignInScreen />
-                </PublicRoute>
-                <PublicRoute path="/signup">
-                  <SignUpScreen />
-                </PublicRoute>
-                <PrivateRoute path="/foods/:title">
-                  <FoodDetailScreen />
-                </PrivateRoute>
-                <PrivateRoute path="/orders">
-                  <PlaceOrderScreen />
-                </PrivateRoute>
-                <PrivateRoute path="/order-successful">
-                  <OrderSuccessfulScreen />
-                </PrivateRoute>
-                <PrivateRoute path="/admin">
-                  <Admin />
-                </PrivateRoute>
-                <CompatRoute path="*" component={ErrorScreen} />
-              </Switch>
-            </DeliveryProvider>
-          </OrderProvider>
-        </CompatRouter>
+              <Route path="/signin" element={<SignInScreen />} />
+
+              <Route path="/signup" element={<SignUpScreen />} />
+
+              <Route path="/foods/:title" element={<FoodDetailScreen />} />
+
+              <Route path="/orders" element={<PlaceOrderScreen />} />
+
+              <Route
+                path="/order-successful"
+                element={<OrderSuccessfulScreen />}
+              />
+
+              <Route path="/admin" element={<Admin />} />
+
+              <Route path="*" element={<ErrorScreen />} />
+            </Routes>
+          </DeliveryProvider>
+        </OrderProvider>
       </Router>
     </AuthProvider>
   );

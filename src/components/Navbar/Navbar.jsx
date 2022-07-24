@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BsCart2 } from 'react-icons/bs';
 import { FiLogOut } from 'react-icons/fi';
-import { NavLink, useNavigate } from 'react-router-dom-v5-compat';
+import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo2.png';
 import { useOrder } from '../../contexts/OrderProvider';
 // import useAuth from '../../hooks/useAuth';
@@ -68,12 +68,12 @@ const Navbar = () => {
           <>
             <div className="flex items-center justify-end space-x-6">
               <button
-                className="bg-primary px-6 py-3 text-white poppins rounded-full ring-green-300 focus:outline-none focus:ring-4  transition duration-700 hover:scale-105 "
+                className="bg-primary px-6 py-3 text-white poppins rounded-full ring-green-500 focus:outline-none focus:ring-4  transition duration-700 hover:scale-105 "
                 onClick={() => navigate('/signin')}>
                 Sign In
               </button>
               <button
-                className=" bg-primary px-6 py-3 text-white poppins rounded-full ring-green-300 focus:outline-none focus:ring-4  transition duration-700 hover:scale-105"
+                className=" bg-primary px-6 py-3 text-white poppins rounded-full ring-green-500 focus:outline-none focus:ring-4  transition duration-700 hover:scale-105"
                 onClick={() => navigate('/signup')}>
                 Sign Up
               </button>

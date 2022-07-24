@@ -77,11 +77,10 @@ const SignUpScreen = () => {
             ))}
           </div>
           <Button text="Sign Up" />
-          <Link to="/signin">
-            <p className="text-base text-primary text-center my-6 hover:underline">
-              Already have an account ?
-            </p>
-          </Link>
+          <Link to="signin" />
+          <p className="text-base text-primary text-center my-6 hover:underline">
+            Already have an account ?
+          </p>
 
           <GoogleSignIn text="Sign Up With Google" />
         </form>

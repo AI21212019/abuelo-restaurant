@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom-v5-compat';
+import { useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
 import DeliveryForm from '../components/PlaceOrder/DeliveryForm';
 import OrderCard from '../components/PlaceOrder/OrderCard';
