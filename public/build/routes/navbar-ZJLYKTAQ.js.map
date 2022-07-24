@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/hq/Desktop/techno/abuelo-restaurant/app/routes/navbar.jsx?browser", "../../../app/routes/navbar.jsx"],
+  "sourcesContent": ["export { default } from \"/Users/hq/Desktop/techno/abuelo-restaurant/app/routes/navbar.jsx\";", "export default function About() {\n  return (\n    <main>\n      <h1>About us</h1>\n      <PageContent />\n    </main>\n  );\n}\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAAe,iBAAiB;AAC9B,SACE,oCAAC,QAAD,MACE,oCAAC,MAAD,MAAI,aACJ,oCAAC,aAAD;AAAA;",
+  "names": []
+}
