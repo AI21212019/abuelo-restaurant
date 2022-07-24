@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiOutlineDelete } from 'react-icons/ai';
 import { FiEdit } from 'react-icons/fi';
-import { Link } from 'react-router-dom-v5-compat';
+import { Link } from 'react-router-dom';
 // eslint-disable-next-line no-unused-vars
 import swal from 'sweetalert';
 import useFetch from '../hooks/useFetch';

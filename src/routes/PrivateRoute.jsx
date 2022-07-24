@@ -2,7 +2,7 @@ import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 
-export default function RequireAuth({ children, ...rest }) {
+const PrivateRoute = ({ children, ...rest }) => {
   const { user } = useAuth();
 
   return (
@@ -22,4 +22,6 @@ export default function RequireAuth({ children, ...rest }) {
       }
     />
   );
-}
+};
+
+export default PrivateRoute;

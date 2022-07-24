@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BsCart2 } from 'react-icons/bs';
 import { FiLogOut } from 'react-icons/fi';
-import { NavLink, useNavigate } from 'react-router-dom-v5-compat';
+import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo2.png';
 import { useOrder } from '../../contexts/OrderProvider';
 // import useAuth from '../../hooks/useAuth';

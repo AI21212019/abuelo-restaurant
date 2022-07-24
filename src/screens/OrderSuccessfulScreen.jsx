@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
 import { MdVerified } from 'react-icons/md';
-import { useNavigate } from 'react-router-dom-v5-compat';
+import { useNavigate } from 'react-router-dom';
 import GridLoader from 'react-spinners/GridLoader';
 import orderSuccessful from '../assets/ordersuccess.png';
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-// import { useHistory, useParams } from 'react-router-dom';
-import { useParams, useNavigate } from 'react-router-dom-v5-compat';
+import { useNavigate, useParams } from 'react-router-dom';
+// import { useParams, useNavigate } from 'react-router-dom-v5-compat';
 // eslint-disable-next-line no-unused-vars
 import swal from 'sweetalert';
 import Button from '../components/Form/Button';

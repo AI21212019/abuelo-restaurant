@@ -9,14 +9,14 @@ import {
   updateProfile
 } from 'firebase/auth';
 import { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import swal from 'sweetalert';
-// import { useNavigate } from 'react-router-dom-v5-compat';
+import { useNavigate } from 'react-router-dom';
 
-const useFirebase = props => {
+const useFirebase = () => {
   const [user, setUser] = useState({});
   const auth = getAuth();
-  const history = useHistory();
+  const navigate = useNavigate();
   // const navigate = useNavigate();
 
   //on State Change
@@ -29,16 +29,16 @@ const useFirebase = props => {
   }, [auth]);
 
   //sign up functionality
-  const signUpUser = (email, password, name, image) => {
+  const signUpUser = (email, password, name) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then(res => {
         setUser(res.user);
         updateProfile(auth.currentUser, {
-          displayName: name,
-          photoURL: image
+          displayName: name
         }).then(() => {
           swal('Good job!', 'Account has been created!', 'success');
-          history.push('/');
+          navigate('/');
+          // navigate('/');
         });
       })
       .catch(err => swal('Something went wrong!', `${err.message}`, 'error'));
@@ -50,7 +50,8 @@ const useFirebase = props => {
       .then(res => {
         setUser(res.user);
         swal('Sign in Successful!', 'Welcome back !', 'info');
-        history.push('/');
+        navigate('/');
+        // navigate('/');
       })
       .catch(err => swal('Something went wrong!', `${err.message}`, 'error'));
   };
@@ -62,7 +63,7 @@ const useFirebase = props => {
       .then(res => {
         setUser(res.user);
         swal('Good job!', 'Account has been created!', 'success');
-        history.push('/');
+        navigate('/');
       })
       .catch(err => console.log(err.message));
   };
@@ -73,7 +74,7 @@ const useFirebase = props => {
       .then(() => {
         setUser({});
         swal('Logout Successful!', 'You are logged out!', 'success');
-        history.push('/signin');
+        navigate('/signin');
       })
       .catch(err => {
         swal('Something went wrong!', `${err.message}`, 'error');

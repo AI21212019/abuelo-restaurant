@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { BsCart2 } from 'react-icons/bs';
-import { useNavigate, useParams } from 'react-router-dom-v5-compat';
+import { useNavigate, useParams } from 'react-router-dom';
 import swal from 'sweetalert';
 import { useOrder } from '../contexts/OrderProvider';
 import useFetch from '../hooks/useFetch';
