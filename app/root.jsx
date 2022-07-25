@@ -28,7 +28,7 @@ export default function Root() {
         <Links />
       </head>
       <body>
-        Hello world!
+        <h1>Hello world!</h1>
         {/* <App /> */}
         <Outlet />
         <ScrollRestoration />
