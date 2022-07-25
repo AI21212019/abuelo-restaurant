@@ -1,1 +1,1 @@
-export { default } from '~/old-app/app';
+// export { default } from '~/old-app/App';
