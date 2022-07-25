@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../app/routes/navbar.jsx", "browser-route-module:/Users/hq/Desktop/techno/abuelo-restaurant/app/routes/navbar.jsx?browser"],
-  "sourcesContent": ["", "export { default } from \"/Users/hq/Desktop/techno/abuelo-restaurant/app/routes/navbar.jsx\";"],
-  "mappings": ";;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACAA;AAAA,oBAAwB;",
-  "names": []
-}

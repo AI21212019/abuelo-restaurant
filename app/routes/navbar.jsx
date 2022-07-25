@@ -1,4 +1,4 @@
-export default function navbar() {
+export default function Navbar() {
   return (
     <main>
       <h1>About us</h1>

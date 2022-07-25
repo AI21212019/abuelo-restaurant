@@ -3,9 +3,9 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import './App.css';
 
-import Navbar from './components/Navbar/Navbar';
+// import Navbar from './components/Navbar/Navbar';
 
-function App() {
+export default function App1() {
   const [count, setCount] = useState(0);
 
   return (
@@ -34,5 +34,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

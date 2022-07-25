@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   //change header by scrolling
-  window.addEventListener('scroll', onChangeHeader);
+  addEventListener('scroll', onChangeHeader);
   return (
     <header
       className={
