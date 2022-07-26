@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdOutlineKeyboardBackspace } from 'react-icons/md';
 // import { Link } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Link } from '@remix-run/react';
 const Back = () => {
   return (
     <div className="relative top-8">

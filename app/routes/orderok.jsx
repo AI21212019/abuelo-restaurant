@@ -1,9 +1,9 @@
 import { css } from '@emotion/react';
 import React, { useEffect, useState } from 'react';
 import { MdVerified } from 'react-icons/md';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from '@remix-run/react';
 import GridLoader from 'react-spinners/GridLoader';
-import orderSuccessful from '../assets/ordersuccess.png';
+import orderSuccessful from '../old-app/assets/ordersuccess.png';
 
 const override = css`
   display: block;
@@ -51,7 +51,7 @@ const OrderSuccessfulScreen = () => {
               <button
                 className="bg-primary text-white px-8 py-2 focus:outline-none poppins rounded-full mt-24  transition duration-300 hover:scale-105"
                 onClick={() => navigate.push('/')}>
-                Go back to home
+                Home
               </button>
             </div>
           </>

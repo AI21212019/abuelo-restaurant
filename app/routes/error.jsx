@@ -1,6 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import errorImg from '../assets/error.png';
+import { useNavigate } from '@remix-run/react';
+import errorImg from '../old-app/assets/error.png';
 
 const ErrorScreen = () => {
   const navigate = useNavigate();
