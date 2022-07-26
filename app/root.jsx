@@ -9,7 +9,7 @@ import {
 } from '@remix-run/react';
 
 import tailwindStylesheetUrl from './styles/tailwind.css';
-// import App1 from './old-app/App';
+// import HomeScreen from 'app/routes/home';
 export const links = () => {
   return [{ rel: 'stylesheet', href: tailwindStylesheetUrl }];
 };
@@ -27,9 +27,8 @@ export default function Root() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="h-full">
         <h1>Hello world!</h1>
-        {/* <App /> */}
         <Outlet />
         <ScrollRestoration />
         <Scripts />

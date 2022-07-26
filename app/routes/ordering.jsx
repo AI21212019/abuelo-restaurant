@@ -1,19 +1,17 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from '@remix-run/react';
 import swal from 'sweetalert';
-import DeliveryForm from '../components/PlaceOrder/DeliveryForm';
-import OrderCard from '../components/PlaceOrder/OrderCard';
-import OrderPrice from '../components/PlaceOrder/OrderPrice';
-import { useDelivery } from '../contexts/DeliveryProvider';
-import { useOrder } from '../contexts/OrderProvider';
-import Back from '../routes/Back';
+import DeliveryForm from '../old-app/components/PlaceOrder/DeliveryForm';
+import OrderCard from '../old-app/components/PlaceOrder/OrderCard';
+import OrderPrice from '../old-app/components/PlaceOrder/OrderPrice';
+import { useDelivery } from '../old-app/contexts/DeliveryProvider';
+import { useOrder } from '../old-app/contexts/OrderProvider';
+import Back from '../old-app/routes/Back';
 
 const PlaceOrderScreen = () => {
   const { order, setOrder } = useOrder();
   const { input, disabled } = useDelivery();
   const navigate = useNavigate();
-
-  console.log(order);
 
   return (
     <main className=" h-screen banner">

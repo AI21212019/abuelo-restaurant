@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { BsCart2 } from 'react-icons/bs';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from '@remix-run/react';
 import swal from 'sweetalert';
-import { useOrder } from '../contexts/OrderProvider';
-import useFetch from '../hooks/useFetch';
-import Back from '../routes/Back';
+import { useOrder } from '../old-app/contexts/OrderProvider';
+import useFetch from '../old-app/hooks/useFetch';
+import Back from '../old-app/routes/Back';
 
 const FoodDetailScreen = () => {
   const [quantity, setQuantity] = useState(1);

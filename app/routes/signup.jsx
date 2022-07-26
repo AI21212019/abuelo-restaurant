@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Brand from '../components/Form/Brand';
-import Button from '../components/Form/Button';
-import GoogleSignIn from '../components/Form/GoogleSignIn';
-import TextField from '../components/Form/TextField';
-import useAuth from '../hooks/useAuth';
+import { Link } from '@remix-run/react';
+import Brand from '../old-app/components/Form/Brand';
+import Button from '../old-app/components/Form/Button';
+import GoogleSignIn from '../old-app/components/Form/GoogleSignIn';
+import TextField from '../old-app/components/Form/TextField';
+import useAuth from '../old-app/hooks/useAuth';
 
-const SignInScreen = () => {
+const SignUpScreen = () => {
   const [userInput, setUserInput] = useState({
+    name: '',
     email: '',
     password: ''
   });
-  const { signInUser } = useAuth();
+  const { signUpUser } = useAuth();
 
-  // handle change
+  //handle change
   const handleChange = e => {
     const { value, name } = e.target;
     setUserInput(prev => {
@@ -26,26 +27,34 @@ const SignInScreen = () => {
   //handle submit form
   const handleSubmit = async e => {
     e.preventDefault();
-    await signInUser(userInput.email, userInput.password);
+    await signUpUser(userInput.email, userInput.password, userInput.name);
   };
 
   //form inputs
   const Inputs = [
     {
       id: 1,
+      type: 'text',
+      placeholder: 'Name',
+      value: `${userInput.name}`,
+      name: 'name'
+    },
+    {
+      id: 2,
       type: 'email',
       placeholder: 'Email',
       value: `${userInput.email}`,
       name: 'email'
     },
     {
-      id: 2,
+      id: 3,
       type: 'password',
       placeholder: 'Password',
       value: `${userInput.password}`,
       name: 'password'
     }
   ];
+
   return (
     <main className="h-screen w-full banner">
       <div className="flex flex-col justify-center items-center h-screen">
@@ -67,18 +76,17 @@ const SignInScreen = () => {
               />
             ))}
           </div>
-          <Button text="Sign In" />
-          <Link to="/signup">
-            <p className="text-base text-primary text-center my-6 hover:underline">
-              Need an account ?
-            </p>
-          </Link>
+          <Button text="Sign Up" />
+          <Link to="/signup" />
+          <p className="text-base text-primary text-center my-6 hover:underline">
+            Already have an account ?
+          </p>
 
-          <GoogleSignIn text="Sign In With Google" />
+          <GoogleSignIn text="Sign Up With Google" />
         </form>
       </div>
     </main>
   );
 };
 
-export default SignInScreen;
+export default SignUpScreen;
